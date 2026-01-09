@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Layer3 Quest Hider",
+  "version": "1.0",
+  "description": "Hide quests you don't want to see on Layer3",
+  "permissions": ["storage"],
+  "host_permissions": ["https://app.layer3.xyz/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://app.layer3.xyz/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
